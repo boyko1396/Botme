@@ -238,48 +238,6 @@
   }
 }
 
-
-
-.benefits-card {
-  display: flex;
-  &__inner {
-    background: $whiteColor;
-    width: 100%;
-    padding: var(--gap-fluid);
-    display: flex;
-    align-items: center;
-    border-radius: $radiusSm;
-    @media (max-width: $xs) {
-      padding: var(--gap);
-    }
-  }
-  &__media {
-    max-width: 30%;
-    min-width: 82rem;
-    margin-right: var(--gap-fluid);
-    flex: 0 0 30%;
-    @media (max-width: $xs) {
-      margin-right: var(--gap);
-    }
-  }
-  &__picture {
-    @extend %img-cover;
-    padding: 0 0 100%;
-    border-radius: $radiusSm;
-    overflow: hidden;
-  }
-  &__content {
-    flex-grow: 1;
-  }
-  &__title {
-    margin: 0 0 var(--gap);
-  }
-  &__text {
-    font-weight: 500;
-    font-size: var(--fs-5);
-  }
-}
-
 .faq-card {
   --faq-card-y: 16rem;
   --faq-card-x: var(--gap-fluid);

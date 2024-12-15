@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20241216001009">
+  <link rel="stylesheet" href="css/style.min.css??=v=20241216003230">
   <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
@@ -71,8 +71,11 @@
                 <article class="benefits-card benefits__list-card">
                   <div class="benefits-card__inner">
                     <div class="benefits-card__media">
-                      <picture class="benefits-card__picture">
-                        <img src="images/benefits-convenience.gif" width="512" height="512" alt="Удобство"></picture>
+                      <div class="benefits-card__video-wrapper">
+                        <video autoplay muted loop playsinline preload="auto" poster="images/benefits-convenience-poster.png" class="benefits-card__video">
+                          <source src="static/video/benefits-convenience.webm" type="video/webm">
+                          <source src="static/video/benefits-convenience.hevc" type="video/mp4"></video>
+                      </div>
                     </div>
                     <div class="benefits-card__content">
                       <h3 class="benefits-card__title">Удобство</h3>
@@ -88,7 +91,12 @@
                   <div class="benefits-card__inner">
                     <div class="benefits-card__media">
                       <picture class="benefits-card__picture">
-                        <img src="images/benefits-convenience.gif" width="512" height="512" alt="Удобство"></picture>
+                        <div class="benefits-card__video-wrapper">
+                          <video autoplay muted loop playsinline preload="auto" poster="images/benefits-speed-poster.png" class="benefits-card__video">
+                            <source src="static/video/benefits-speed.webm" type="video/webm">
+                            <source src="static/video/benefits-speed.hevc" type="video/mp4"></video>
+                        </div>
+                      </picture>
                     </div>
                     <div class="benefits-card__content">
                       <h3 class="benefits-card__title">Скорость</h3>
@@ -266,6 +274,6 @@
     </div>
   </div>
 
-  <script src="js/app.min.js??=v=20241216001009"></script>
+  <script src="js/app.min.js??=v=20241216003230"></script>
 </body>
 </html>
