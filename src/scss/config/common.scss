@@ -1,0 +1,338 @@
+/* Headings, Common BEM Blocks, and More... */
+
+.logo {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: top;
+  transition: $transition;
+  &:hover {
+    text-decoration: none;
+    @media (min-width: $lg-mf) {
+      opacity: .6;
+    }
+  }
+  &--size {
+    &-sm {
+      width: 156rem;
+    }
+  }
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+.btn-group {
+  --btn-group-gap: 4rem;
+  &--gap {
+    &-sm {
+      --btn-group-gap: 6rem;
+    }
+  }
+  &__inner {
+    margin: calc(-1 * var(--btn-group-gap));
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    padding: var(--btn-group-gap);
+  }
+  &__el {
+  }
+}
+
+.btn {
+  max-width: 100%;
+  min-height: var(--btn-height);
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: inherit;
+  font-size: var(--btn-font-size);
+  line-height: $lineHeightDefault;
+  font-family: $mainFont;
+  text-align: center;
+  text-transform: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  user-select: none;
+  transition: $transition;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+  &:hover {
+    text-decoration: none;
+  }
+  &.disabled,
+  &:disabled {
+    pointer-events: none;
+  }
+  &--theme {
+    &-transparent-grey {
+      background: transparent;
+      color: $blackLightColor;
+      border: 1px solid transparent;
+      border-radius: $radiusSm;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          background: $greyLightColor;
+          color: $blackLightColor;
+          border-color: $greyLightColor;
+        }
+      }
+      &:focus,
+      &:active {
+      }
+    }
+    &-accent-fill {
+      background: $accentColor;
+      color: $whiteColor;
+      border: 1px solid $accentColor;
+      border-radius: $radiusSm;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          background: $blueDarkColor;
+          color: $whiteColor;
+          border-color: $blueDarkColor;
+        }
+      }
+      &:focus,
+      &:active {
+      }
+    }
+  }
+  &--size {
+    &-sm {
+      --btn-height: 38rem;
+      --btn-padding-x: 18rem;
+      --btn-padding-y: 8rem;
+      --btn-font-size: var(--fs-7);
+      @media (max-width: $sm) {
+        min-height: 36rem;
+        --btn-padding-x: 14rem;
+        --btn-padding-y: 6rem;
+      }
+    }
+    &-md {
+      --btn-height: 48rem;
+      --btn-padding-x: 28rem;
+      --btn-padding-y: 12rem;
+      --btn-font-size: var(--fs-6);
+      @media (max-width: $sm) {
+        min-height: 44rem;
+        --btn-padding-x: 24rem;
+        --btn-padding-y: 9rem;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+  }
+  &__title {
+  }
+  &__icon {
+    width: 24rem;
+    height: 24rem;
+    position: relative;
+    &--dir {
+      &-ltr {
+        margin-right: 10rem;
+      }
+      &-rtl {
+        margin-left: 10rem;
+      }
+    }
+    .u-icon,
+    img,
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}
+
+.u-content {
+  line-height: $lineHeightDefault;
+  word-wrap: break-word;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0 0 1em;
+  }
+  a {
+    color: $accentColor;
+    box-shadow: inset 0 -1px 0 transparent;
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+      @media (min-width: $lg-mf) {
+        box-shadow: inset 0 -1px 0 rgba($accentColor, .4);
+      }
+    }
+  }
+}
+
+.benefits-card {
+  display: flex;
+  &__inner {
+    background: $whiteColor;
+    width: 100%;
+    padding: var(--gap-fluid);
+    display: flex;
+    align-items: center;
+    border-radius: $radiusSm;
+    @media (max-width: $xs) {
+      padding: var(--gap);
+    }
+  }
+  &__media {
+    max-width: 30%;
+    min-height: 82rem;
+    margin-right: var(--gap-fluid);
+    flex: 0 0 30%;
+    @media (max-width: $xs) {
+      margin-right: var(--gap);
+    }
+  }
+  &__video {
+    background: $whiteColor;
+    background-color: $whiteColor;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    &-wrapper {
+      padding: 0 0 100%;
+      position: relative;
+    }
+  }
+  &__content {
+    flex-grow: 1;
+  }
+  &__title {
+    margin: 0 0 var(--gap);
+  }
+  &__text {
+    font-weight: 500;
+    font-size: var(--fs-5);
+  }
+}
+
+.faq-card {
+  --faq-card-y: 16rem;
+  --faq-card-x: var(--gap-fluid);
+  background: $whiteColor;
+  color: $blackColor;
+  border-radius: $radiusSm;
+  transition: $transition;
+  transition-property: box-shadow;
+  overflow: hidden;
+  @media (max-width: $sm) {
+    --faq-card-y: 12rem;
+  }
+  &:hover {
+    @media (min-width: $lg-mf) {
+      box-shadow: $bShBlack1;
+    }
+  }
+  &.is-show {
+    .faq-card__icon {
+      transform: rotate(180deg);
+      .u-icon:nth-child(1) {
+      }
+    }
+  }
+  &:not(.is-show) {
+    .faq-card__icon {
+    }
+  }
+  &__header {
+    padding: var(--faq-card-y) var(--faq-card-x);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    transition: $transition;
+    transition-property: color;
+    position: relative;
+    @media (max-width: $sm) {
+    }
+    &:hover {
+      @media (min-width: $lg-mf) {
+      }
+      .faq-card__icon {
+        @media (min-width: $lg-mf) {
+        }
+      }
+    }
+  }
+  &__btn {
+    @extend %btn-reset, %link-cover;
+    color: inherit;
+    text-align: left;
+    flex-grow: 1;
+    cursor: pointer;
+    &:before {
+      z-index: 1;
+    }
+  }
+  &__title {
+    margin: 0 var(--gap) 0 0;
+    @media (max-width: $sm) {
+    }
+  }
+  &__icon {
+    width: 24rem;
+    height: 24rem;
+    flex-shrink: 0;
+    color: $accentColor;
+    transition: $transition;
+    transition-property: transform;
+    position: relative;
+    .u-icon {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: $transition;
+      transition-property: transform;
+    }
+  }
+  &__dropdown {
+    height: 0;
+    transition: $transition;
+    overflow: hidden;
+  }
+  &__inner {
+    padding: 0 var(--faq-card-x);
+    @media (max-width: $sm) {
+    }
+  }
+  &__text {
+    padding: var(--faq-card-y) 260rem var(--faq-card-y) 0;
+    border-top: 1px solid $blueSteelColor;
+    @media (max-width: $sm) {
+      padding-right: var(--gap-fluid);
+    }
+  }
+}

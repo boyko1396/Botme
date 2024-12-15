@@ -1,0 +1,15 @@
+.faq {
+  padding: var(--section-y) 0 calc(2 * var(--section-y));
+  &__container {
+  }
+  &__title {
+    margin-bottom: var(--section-title-y);
+    text-align: center;
+  }
+  &__list {
+    margin-bottom: var(--gap-);
+    &-card {
+      margin-bottom: var(--gap);
+    }
+  }
+}

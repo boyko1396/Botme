@@ -1,0 +1,119 @@
+$siteResolution: 1px;
+$mainFont: 'Inter';
+$mainWeight: 400;
+$lineHeight1: 1.4;
+$lineHeight2: 1.25;
+$lineHeight3: 1.2;
+$lineHeight4: 1;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 948rem;
+
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$radiusSm: 12rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$blackLightColor: #2F3135;
+$blueColor: #2793FF;
+$blueDarkColor: #1384F4;
+$blueLightColor: #728A96;
+$blueSteelColor: #F0F6F9;
+$greyColor: #E8E8E8;
+$greyLightColor: #E2EBEE;
+$accentColor: $blueColor;
+
+$bgSite: $blueSteelColor;
+
+$bShBlack1: 0 4px 8px rgba($blackColor, .25);
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blackLightColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 40rem;
+  --fs-2: 30rem;
+  --fs-3: 24rem;
+  --fs-4: 20rem;
+  --fs-5: 18rem;
+  --fs-6: 16rem;
+  --fs-7: 14rem;
+  --fs-8: 12rem;
+  --fs-9: 10rem;
+
+  --gap: 12rem;
+  --gap-: -12rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --section-y: 80rem;
+  --section-title-y: calc(.5 * var(--section-y));
+
+  --scroll-offset: 54rem;
+
+  --header-height: var(--scroll-offset);
+
+  --vh: 1vh;
+  @media (max-width: $sm) {
+    --fs-default: 14rem;
+    --fs-1: 24rem;
+    --fs-2: 24rem;
+    --fs-3: 20rem;
+    --fs-4: 18rem;
+    --fs-5: 16rem;
+    --fs-6: 14rem;
+
+    --gap: 10rem;
+    --gap-: -10rem;
+    --gap-fluid: 20rem;
+    --gap-fluid-: -20rem;
+
+    --section-y: 50rem;
+
+    --scroll-offset: 48rem;
+  }
+  @media (max-width: $xs) {
+    --fs-default: 14rem;
+    --fs-1: 24rem;
+    --fs-2: 24rem;
+    --fs-3: 20rem;
+    --fs-4: 18rem;
+    --fs-5: 16rem;
+    --fs-6: 14rem;
+
+    --gap: 10rem;
+    --gap-: -10rem;
+    --gap-fluid: 20rem;
+    --gap-fluid-: -20rem;
+
+    --section-y: 50rem;
+
+    --scroll-offset: 48rem;
+
+    --gap-container: var(--gap);
+    --gap-container-: var(--gap-);
+  }
+}

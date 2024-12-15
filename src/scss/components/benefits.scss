@@ -1,0 +1,22 @@
+.benefits {
+  padding: var(--section-y) 0;
+  &__container {
+  }
+  &__title {
+    margin-bottom: var(--section-title-y);
+    text-align: center;
+  }
+  &__list {
+    margin-bottom: var(--gap-fluid-);
+    &-col {
+      margin-bottom: var(--gap-fluid);
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

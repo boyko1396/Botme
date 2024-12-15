@@ -1,0 +1,21 @@
+.intro {
+  padding: calc(2 * var(--section-y)) 0 var(--section-y);
+  &__container {
+  }
+  &__content {
+    width: 100%;
+    max-width: 500rem;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: var(--section-title-y);
+    text-align: center;
+    strong {
+      font-weight: 800;
+    }
+  }
+  &__btn-group {
+    display: flex;
+    justify-content: center;
+  }
+}
