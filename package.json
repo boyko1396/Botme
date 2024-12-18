@@ -1,7 +1,7 @@
 {
-  "name": "Botme",
+  "name": "botme",
   "version": "1.7.5",
-  "description": "html/css Botme",
+  "description": "html/css botme",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {

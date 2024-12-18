@@ -1,6 +1,6 @@
 {
-  "name": "Botme",
-  "short_name": "Botme",
+  "name": "botme",
+  "short_name": "botme",
   "icons": [
     {
       "src": "static/favicon/web-app-manifest-192x192.png",

@@ -21,9 +21,9 @@ BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
 document.addEventListener('DOMContentLoaded', function() {
-  // nav active anchor
+  // anchor link
   const smoothScroll = new SmoothScroll('.js-anchor', '--scroll-offset', 650);
-
+  
   // faq card
   new FaqCard();
 });

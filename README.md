@@ -1,4 +1,4 @@
-# Botme html/css
+# botme html/css
 
 ## To work with this project, follow these commands:
 
